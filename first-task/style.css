@@ -135,3 +135,61 @@ body {
     margin-left: -155px;
   }
 }
+
+.members__alumni {
+margin-top: 50px;
+}
+
+.alumni__title {
+  margin: 20px 0px;
+  text-transform: uppercase;
+  color: #a6a6a6;
+  font-size: small;
+  letter-spacing: -.2px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.alumni__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.alumnus {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.alumnus__image {
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  transition: transform 0.1s ease-out;
+}
+
+.alumnus__image:hover {
+  transform: scale(1.25);
+}
+
+.alumnus__details {
+  position: absolute;
+  margin-top: 73.5px;
+  display: none;
+  z-index: 3;
+  max-width: 254px;
+  padding: 5px 10px;
+  background-color: rgba(40,45,48,.89);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.details__fullname--alumnus {
+  letter-spacing: -.2px;
+  font-size: smaller;
+}
+
+.alumnus__image:hover ~ .alumnus__details {
+  display: block;
+}
