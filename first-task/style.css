@@ -1,0 +1,137 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.members {
+  max-width: 930px;
+  margin: auto;
+}
+
+.members__actives {
+}
+
+.actives__title {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: -0.24px;
+  margin: 70px 0;
+}
+
+.actives__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  margin: 20px 10px;
+}
+
+.member__image {
+  height: 135px;
+  width: 135px;
+  border-radius: 40px;
+  transition: transform 0.2s ease-out;
+}
+
+.member__image:hover {
+  transform: scale(1.1);
+}
+
+.member__details {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -6.5px;
+  display: none;
+  z-index: 3;
+  max-width: 254px;
+  padding: 20px;
+  background-color: #282d30;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.member__image:hover ~ .member__details {
+  display: block;
+}
+
+.details__fullname {
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 0;
+}
+
+.details__fullname--bolded {
+  font-weight: 700;
+}
+
+.details__email-container {
+  display: flex;
+  align-items: center;
+}
+
+.email-container__icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+
+.email-container__email {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.details__description {
+  font-size: 14px;
+  color: #a6a6a6;
+  letter-spacing: -0.2px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 310px) {
+  .member:nth-child(1n) > .member__details {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 310px) and (max-width: 464px){
+  .member:nth-child(2n) > .member__details {
+    margin-left: -155px;
+  }
+
+}
+
+@media screen and (min-width: 465px) and (max-width: 619px){
+  .member:nth-child(3n) > .member__details {
+    margin-left: -155px;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 774px){
+  .member:nth-child(4n) > .member__details {
+    margin-left: -155px;
+  }
+}
+
+@media screen and (min-width: 775px) and (max-width: 929px){
+  .member:nth-child(5n) > .member__details {
+    margin-left: -155px;
+  }
+}
+
+@media screen and (min-width: 930px){
+  .member:nth-child(6n) > .member__details {
+    margin-left: -155px;
+  }
+}
