@@ -1,5 +1,35 @@
 body {
     margin: 0;
-	font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.supporting-us {
+    max-width: 1140px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.supporting-us__title {
+    margin: 100px 0 75px;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: bolder;
+    letter-spacing: -1.2px;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.details__logo {
+    width: 100%;
+}
