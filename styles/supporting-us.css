@@ -6,11 +6,11 @@ body {
 .supporting-us {
   max-width: 1140px;
   width: 90vw;
-  margin: 0 auto;
+  margin: 120px auto;
 }
 
 .supporting-us__title {
-  margin: 100px 0 0;
+  margin-bottom: 0;
   font-size: 35px;
   line-height: 40px;
   font-weight: 900;
@@ -148,7 +148,7 @@ body {
 
 .details__logo--extension-engine {
   width: 100%;
-  transform: scale(.3);
+  transform: scale(0.3);
   align-self: flex-end;
   margin-right: -90px;
 }
@@ -179,6 +179,34 @@ body {
   line-height: 24px;
   padding: 0 15px 10px;
   margin-top: 30px;
+}
+
+.other-sponsors__category {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category__title {
+  align-self: flex-start;
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+
+.category__sponsor {
+  flex-basis: 50%;
+  height: 100px;
+  margin: 50px auto 0;
+}
+
+.sponsor__logo {
+  max-width: 50%;
+  margin: 15px 0;
+  padding: 0 25%;
 }
 
 @keyframes slider {
