@@ -246,12 +246,11 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .supporting-us {
     max-width: 820px;
   }
 
-  /*todo: promjeni primary sponsora*/
   .sponsor--primary {
     display: flex;
     box-shadow: none;
@@ -384,5 +383,42 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  /*todo: sponsore overlappaj po visini*/
+  .supporting-us {
+    max-width: 1120px;
+  }
+
+  .supporting-us__title {
+    font-size: 54px;
+    line-height: 65px;
+  }
+
+  .slider__slide {
+    height: 330px;
+  }
+
+  .slider__dots {
+    margin: 10% 0 0 10%;
+  }
+
+  .caption__heading--primary {
+    top: 40%;
+  }
+
+  .sponsor {
+    width: 75%;
+    align-self: flex-start;
+    margin-bottom: -15%;
+  }
+
+  .sponsors .sponsor:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .sponsors .sponsor:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .sponsors .sponsor:nth-child(3) > .sponsor__caption {
+    margin-left: 45%;
+  }
 }
